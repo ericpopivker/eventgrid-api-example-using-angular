@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=0">
+    <title>Order Flow</title>
+    <base href="/" />
+    <link rel="icon" href="https://eventgrid.com/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <!-- build:css css/app.css -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/animation.css" rel="stylesheet" />
+    <link href="styles/header.css" rel="stylesheet" />
+    <link href="styles/recap.css" rel="stylesheet" />
+    <link href="styles/wizard.css" rel="stylesheet" />
+    <link href="styles/tickets-list.css" rel="stylesheet" />
+    <link href="styles/credit-card.css" rel="stylesheet" />
+    <link href="styles/thank-you.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <!-- build:js js/app.js -->
+    <script src="bower_components/lodash/dist/lodash.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="app.js"></script>
+    <script src="routes/routes.js"></script>
+    <script src="controllers/attendeesController.js"></script>
+    <script src="controllers/orderController.js"></script>
+    <script src="controllers/paymentController.js"></script>
+    <script src="controllers/thankYouController.js"></script>
+    <script src="controllers/ticketsController.js"></script>
+    <script src="directives/header.js"></script>
+    <script src="directives/recap.js"></script>
+    <script src="directives/wizard.js"></script>
+    <script src="directives/footer.js"></script>
+    <script src="directives/creditCard.js"></script>
+    <script src="directives/recapMobilePanel.js"></script>
+    <script src="directives/fields/base/field.js"></script>
+    <script src="directives/fields/base/fieldLayout.js"></script>
+    <script src="directives/fields/text.js"></script>
+    <script src="directives/fields/email.js"></script>
+    <script src="directives/fields/radio.js"></script>
+    <script src="services/values.js"></script>
+    <script src="services/api.js"></script>
+    <script src="services/eventgrid.js"></script>
+    <script src="services/validator.js"></script>
+    <script src="services/validationRules.js"></script>
+    <script src="services/persistence.js"></script>
+    <!-- endbuild -->
+</head>
+<body ng-app="app">
+    <ui-view></ui-view>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+</body>
+</html>

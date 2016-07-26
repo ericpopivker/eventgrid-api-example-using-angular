@@ -1,0 +1,11 @@
+<div class="panel event-header">
+    <div class="panel-body">
+        <div class="event-header-title">{{header.title}}</div>
+        <div class="event-header-description">{{header.venue}}</div>
+        <div class="event-header-description">{{header.date}}</div>
+        <div class="event-header-timer" ng-show="header.sessionExpire()">
+            <span class="event-header-timer-time" id="timer"></span>
+            <span class="event-header-timer-description">Your tickets have been reserved for 30 mins</span>
+        </div>
+    </div>
+</div>

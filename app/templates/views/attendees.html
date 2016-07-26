@@ -1,0 +1,14 @@
+<div class="panel panel--no-margin" ng-repeat="item in attendees.registration.items">
+    <div class="panel-heading">{{item.title}}</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-8">
+                <field field-model="field" ng-repeat="field in item.form"></field>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer" ng-if="$index==attendees.registration.items.length-1">
+        <button class="btn btn-lg btn-default" ng-click="attendees.prevStep()">Previous</button>
+        <button class="btn btn-lg btn-success pull-right" ng-click="attendees.nextStep()" style="float:right">Continue</button>
+    </div>
+</div>

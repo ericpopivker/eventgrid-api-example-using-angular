@@ -1,0 +1,36 @@
+<div class="panel recap">
+    <div class="panel-heading">Summary</div>
+    <div class="panel-body">
+        <div ng-if="!recap.items" class="recap-empty">
+            Please select your tickets
+        </div>
+        <div ng-if="recap.items">
+            <div ng-repeat="item in recap.items" ng-init="hideDetails=false" class="recap-item">
+                <div class="recap-price">{{item.total | currency}}</div>
+                <div class="recap-title">{{item.title}}</div>
+                <div ng-show="getFullName(item)">
+                    <div class="recap-fullname">{{getFullName(item)}}</div>
+                    <div class="recap-details-trigger"><a ng-click="hideDetails=!hideDetails">Hide Details</a></div>
+                    <div class="recap-details" ng-hide="hideDetails">
+                        <table class="table">
+                            <tbody>
+                            <tr ng-repeat="field in item.form">
+                                <td>{{field.label}}:</td>
+                                <td>{{getText(field)}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="recap-subtotal">
+                <span class="pull-right">{{recap.subtotal | currency}}</span>
+                Subtotal
+            </div>
+            <div class="recap-total">
+                <span class="pull-right">{{recap.total | currency}}</span>
+                Total
+            </div>
+        </div>
+    </div>
+</div>

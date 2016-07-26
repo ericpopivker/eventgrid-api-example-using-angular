@@ -1,0 +1,9 @@
+
+.smooth.ng-enter {
+  transition:0.3s linear all;
+  opacity:0;
+}
+
+.smooth.ng-enter.ng-enter-active {
+  opacity:1;
+}

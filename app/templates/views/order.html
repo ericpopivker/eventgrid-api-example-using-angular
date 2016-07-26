@@ -1,0 +1,20 @@
+<wizard wizard-model="order.wizard" ng-class="{'hidden-xs':!order.recapMobileSwitcher.hide, 'with-timer': order.withTimer()}"></wizard>
+<div class="main">
+    <div class="container">
+        <recap-mobile-panel switcher-model="order.recapMobileSwitcher"></recap-mobile-panel>
+        <div class="row invisible-xs">
+            <div class="col-xs-12">
+                <header header-model="order.header"></header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div ui-view="" class="smooth" ng-class="{'hidden-xs':!order.recapMobileSwitcher.hide}"></div>
+            </div>
+            <div class="col-sm-4">
+                <recap recap-model="order.registration" ng-class="{'hidden-xs':order.recapMobileSwitcher.hide}"></recap>
+            </div>
+        </div>
+    </div>
+</div>
+<footer></footer>

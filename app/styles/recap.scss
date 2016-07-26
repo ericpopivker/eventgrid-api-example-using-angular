@@ -1,0 +1,122 @@
+.recap{
+  &-empty{
+    padding-top: 120px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.8;
+    max-width: 100px;
+    margin: 0 auto;
+    min-height: 280px;
+  }
+
+  &-item{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  &-title{
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 50px;
+  }
+
+  &-price{
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &-subtotal{
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    opacity: 0.8
+  }
+
+  &-total{
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  &-fullname{
+    font-size:18px;
+    opacity:0.6;
+  }
+
+  &-details-trigger{
+    cursor:pointer;
+  }
+
+  &-details{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size:16px;
+    padding: 5px;
+    margin-top:10px;
+
+    > table{
+      margin-bottom: 0;
+    }
+
+    > table > tbody > tr > td{
+      border-top: none;
+      vertical-align: middle;
+      padding:4px;
+    }
+
+    > table > tbody > tr > td:first-of-type{
+      width: 110px;
+      opacity:0.8;
+    }
+  }
+}
+
+.recap-mobile{
+  @media(min-width:768px){
+    display:none;
+  }
+
+  &-hide{
+    margin-bottom: 15px;
+  }
+
+  &-hide > .panel{
+    margin-bottom: 0;
+  }
+
+  &-show{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    text-align:center;
+    background-color: #fff;
+    font-size: 22px;
+    padding: 10px 20px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    z-index: 1000;
+
+    .with-timer + .main &{
+      top:25px;
+    }
+  }
+
+  &-back{
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAxMCAxOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAgMTgiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjNDQ0NDQ0IiBwb2ludHM9IjEuMTEsNy44NyAwLDkgMS4xMSwxMC4xMiA4Ljg5LDE4IDEwLDE2Ljg4IDIuMjIsOSAxMCwxLjEyIDguODksMCAiLz48L3N2Zz4=);
+    width:10px;
+    height:18px;
+    margin-top: 5px;
+    display:inline-block;
+    float:left;
+    cursor: pointer;
+  }
+
+  &-total{
+    float:right;
+    font-size:14px;
+  }
+
+  &-total-val{
+    font-size:22px;
+  }
+}

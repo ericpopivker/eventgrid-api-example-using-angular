@@ -1,0 +1,47 @@
+.tickets-list{
+  &-item{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  &-item:last-of-type{
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  &-item:first-of-type{
+    padding-top: 0;
+  }
+
+  &-quantity{
+    float:right;
+  }
+
+  &-quantity + div{
+    padding-right: 80px;
+  }
+
+  &-title{
+    font-size:17px;
+    font-weight:bold;
+  }
+
+  &-price{
+    font-size: 14px;
+  }
+
+  &-description{
+    font-size: 13px;
+    opacity: 0.6;
+  }
+
+  @media(max-width:767px) {
+    &-quantity + div{
+      padding-right: 0;
+    }
+
+    &-title{
+      padding-right: 80px;
+    }
+  }
+}
