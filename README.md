@@ -1,5 +1,5 @@
 # Eventgrid API example using AngularJS
-Example web application that demonstrates how to consume Eventgrid API using Angulare and Node.js
+Example web application that demonstrates how to consume Eventgrid API using Angular and Node.js
 
 ### API Reference
 
@@ -11,7 +11,7 @@ Example web application that demonstrates how to consume Eventgrid API using Ang
 
 ### Setup
 
-You need Gulp and Bower installed globally:
+You need Gulp and Bower installed globally
 
 ```sh
 $ npm i -g gulp
