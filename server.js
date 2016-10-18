@@ -47,6 +47,6 @@ app.get('/*/Order/*',function(req,res){
     res.sendFile(__dirname  + indexPath);
 });
 
-app.listen(3333, function(){
+app.listen(process.env.OPENSHIFT_NODEJS_PORT || '3333', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1', function(){
     console.log('server started: http://localhost:3333');
 });
