@@ -7,7 +7,7 @@ Example web application that demonstrates how to consume Eventgrid API using Ang
 
 ### Running Demo
 
-[http://register-eventgrid.rhcloud.com/Events/21285][demo]
+[http://eventgrid-ki88.rhcloud.com/Events/21285][demo]
 
 ### Setup
 
@@ -52,5 +52,5 @@ $ node server dev
 ```
 
 
-[demo]: <http://register-eventgrid.rhcloud.com/Events/21285>
+[demo]: <http://eventgrid-ki88.rhcloud.com/Events/21285>
 [api]: <https://apidoc.eventgrid.com/>
