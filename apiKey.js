@@ -1,1 +1,1 @@
-exports.value = 'API KEY';
+exports.value = 'FmnKFL5V';

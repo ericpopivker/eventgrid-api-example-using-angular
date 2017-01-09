@@ -3,3 +3,4 @@ bower_components/
 node_modules/
 app/styles/*.css
 app/styles/*.map
+dist/

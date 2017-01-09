@@ -47,16 +47,15 @@
         function _get(url){
             return $q(function(resolve, reject){
                 $http.get(url)
-                    .success(function(data){
-                        if(data.isSuccess){
-                            resolve(data);
+                    .then(function(response){
+                        if(response.data.isSuccess){
+                            resolve(response.data);
                         }
                         else{
-                            reject(data);
+                            reject(response);
                         }
-                    })
-                    .error(function(data){
-                        reject(data);
+                    }, function(response){
+                        reject(response);
                     })
             });
         }
@@ -64,16 +63,15 @@
         function _post(url, data){
             return $q(function(resolve, reject){
                 $http.post(url, data)
-                    .success(function(data){
-                        if(data.isSuccess){
-                            resolve(data);
+                    .then(function(response){
+                        if(response.data.isSuccess){
+                            resolve(response.data);
                         }
                         else{
-                            reject(data);
+                            reject(response);
                         }
-                    })
-                    .error(function(data){
-                        reject(data);
+                    }, function(response){
+                        reject(response);
                     })
             });
         }
