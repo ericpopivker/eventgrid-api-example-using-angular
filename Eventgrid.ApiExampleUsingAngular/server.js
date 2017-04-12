@@ -1,9 +1,14 @@
 var express = require('express');
 var request = require('request');
 var bodyParser = require('body-parser');
-var apiKey = require('./apiKey').value;
+
+var config = require('./config');
+var apiKey = config.apiKey;
+var apiRootUrl = config.apiRootUrl;
+
 
 console.log(apiKey);
+console.log(apiRootUrl);
 
 var app = express();
 
@@ -21,7 +26,7 @@ else{
 }
 
 app.all('/api/*', function(req, res) {
-    var url = 'https://api.stable.eventgrid.com' + req.url.replace('/api', '/2.0/customer-api');
+    var url = apiRootUrl + req.url.replace('/api', '/2.0/customer-api');
 
     if(req.method == 'GET'){
         url += (/\?/.test(url) ? '&' : '?') + 'apiKey=' + apiKey;

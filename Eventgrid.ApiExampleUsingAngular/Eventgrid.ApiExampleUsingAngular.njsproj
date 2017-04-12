@@ -19,7 +19,7 @@
     <Content Include="bower.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Compile Include="apiKey.js" />
+    <Compile Include="config.js" />
     <Compile Include="gulpfile.js" />
     <Compile Include="server.js" />
     <Content Include="app\index.html" />
