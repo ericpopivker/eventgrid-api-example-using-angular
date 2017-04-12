@@ -1,0 +1,4 @@
+C:\Code\GitHub\eventgrid-api-example-using-angular\obj\Debug\Eventgrid.ApiExampleUsingAngular.njsprojResolveAssemblyReference.cache
+C:\Code\GitHub\eventgrid-api-example-using-angular\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Code\GitHub\eventgrid-api-example-using-angular\Eventgrid.ApiExampleUsingAngular\obj\Debug\Eventgrid.ApiExampleUsingAngular.njsprojResolveAssemblyReference.cache
+C:\Code\GitHub\eventgrid-api-example-using-angular\Eventgrid.ApiExampleUsingAngular\bin\Microsoft.NodejsTools.WebRole.dll
