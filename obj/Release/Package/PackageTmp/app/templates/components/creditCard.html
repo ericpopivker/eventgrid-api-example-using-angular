@@ -1,0 +1,44 @@
+<div class="credit-card">
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="form-group">
+                <span class="input-label">Card Number</span>
+                <input class="form-control input-lg" type="text" ng-model="card.number.value" />
+                <div class="validation-message" ng-show="!card.number.valid && card.number.dirty">{{card.number.error}}</div>
+            </div>
+        </div>
+        <div class="col-xs-3" style="padding-left:0">
+            <div class="form-group">
+                <span class="input-label">CVC</span>
+                <input class="form-control input-lg" type="text" ng-model="card.cvc.value" />
+                <div class="validation-message" ng-show="!card.cvc.valid && card.cvc.dirty">{{card.cvc.error}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="form-group">
+                <span class="input-label">MM/YYYY</span>
+                <input class="form-control input-lg" type="text" ng-model="card.exp.value" />
+                <div class="validation-message" ng-show="!card.number.exp && card.exp.dirty">{{card.exp.error}}</div>
+            </div>
+        </div>
+        <div class="col-xs-3" style="padding-left:0">
+            <div class="form-group">
+                <span class="input-label">ZIP</span>
+                <input class="form-control input-lg" type="text" ng-model="card.zip.value" />
+                <div class="validation-message" ng-show="!card.zip.valid && card.zip.dirty">{{card.zip.error}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <span class="input-label">Name on Card</span>
+                <input class="form-control input-lg" type="text" ng-model="card.name.value" />
+                <div class="validation-message" ng-show="!card.name.valid && card.name.dirty">{{card.name.error}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="credit-card-icons"></div>
+</div>

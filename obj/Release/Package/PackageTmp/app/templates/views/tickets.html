@@ -1,0 +1,25 @@
+<div class="panel tickets-list">
+    <div class="panel-heading">Tickets</div>
+    <div class="panel-body">
+        <div>
+            <div class="tickets-list-item" ng-repeat="ticketType in tickets.ticketTypes" ng-init="hideDescriptionMobile=true">
+                <div class="tickets-list-quantity">
+                    <select class="form-control" ng-model="ticketType.quantity" ng-options="opt for opt in [0, 1, 2, 3]" ng-change="tickets.quantityChanged()"></select>
+                </div>
+                <div>
+                    <div class="tickets-list-title">{{ticketType.title}}</div>
+                    <div class="tickets-list-price">{{ticketType.price | currency}}</div>
+                    <div class="visible-xs">
+                        <a ng-click="hideDescriptionMobile=!hideDescriptionMobile">
+                            {{hideDescriptionMobile?'Show':'Hide'}} description
+                        </a>
+                    </div>
+                    <div class="tickets-list-description" ng-class="{'hidden-xs':hideDescriptionMobile}">{{ticketType.description}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer clearfix">
+        <button class="btn btn-lg btn-success pull-right" ng-disabled="tickets.loading || tickets.nothingSelected()" ng-click="tickets.nextStep()">Continue{{tickets.loading ? '...' : ''}}</button>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="recap-mobile">
+    <div class="recap-mobile-hide" ng-show="switcher.hide">
+        <div class="panel">
+            <div class="panel-body">
+                <button class="btn btn-default" ng-click="switcher.hide=!switcher.hide">Order Summary</button>
+                <span class="recap-mobile-total" ng-show="switcher.total()">Total <span class="recap-mobile-total-val">{{switcher.total() | currency}}</span></span>
+            </div>
+        </div>
+    </div>
+    <div class="recap-mobile-show" ng-show="!switcher.hide">
+        <span class="recap-mobile-back" ng-click="switcher.hide=!switcher.hide"></span>
+        <span class="recap-mobile-title">Summary</span>
+    </div>
+</div>
