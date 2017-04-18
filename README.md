@@ -52,5 +52,5 @@ $ node server dev
 ```
 
 
-[demo]: <http://eventgrid-ki88.rhcloud.com/Events/21285>
+[demo]: <http://eventgrid-api-demo-angular.azurewebsites.net/Events/20483>
 [api]: <https://apidoc.eventgrid.com/>
